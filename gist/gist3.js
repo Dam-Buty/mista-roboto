@@ -11,7 +11,7 @@ async function slackBot() {
   const bot = await require("../utils/slackbot")()
   
   bot.on("message", async event => {
-    const { type, bot_id, user, channel } = event
+    const { type, bot_id, user, channel, ts } = event
 
     if (type === "message" && !bot_id) {
       const { text } = event
@@ -30,7 +30,7 @@ async function slackBot() {
             text: `<@${user}> it seems that you have slid into the ${language_name} language :cop: :flag-${language_code}:`,
             color: "danger"
           }]
-        })
+        }).catch(e => { console.log(e) })
       }
     }
   })
