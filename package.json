@@ -1,0 +1,25 @@
+{
+  "name": "mista-roboto",
+  "version": "1.0.0",
+  "description": "Pre-baked code for the Mister Robot Season 1 live-coding session",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dam-Buty/mista-roboto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dam-Buty/mista-roboto/issues"
+  },
+  "homepage": "https://github.com/Dam-Buty/mista-roboto#readme",
+  "dependencies": {
+    "node-simple-router": "^0.10.1",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "slackbots": "^1.1.0"
+  }
+}
